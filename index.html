@@ -11,7 +11,7 @@
 		}
 		#middle{
 		width: 100%;
-		height: 80%;
+		height: 60%;
 		}
 		#pre-footer{
 		width: 100%;
@@ -22,7 +22,7 @@
 		height: 10%;
 		}
 		#Ilogo{
-		width: 5%;
+		width: 20%;
 		}
 		ul{
 		list-style: none;
@@ -33,12 +33,15 @@
 	</head>
 	<body>
 	<div id="header">
-		<div id="logo">
-		<img id="Ilogo" src="https://www.tkrev.com/wp-content/uploads/2021/04/cropped-logo-1.png"/>
+		<div id="logo" style="float:left;">
+			<img id="Ilogo" src="https://www.tkrev.com/wp-content/uploads/2021/04/cropped-logo-1.png"/>
+		</div>
+		<div id="Connect" style="float:left; margin-left: 50%;">
+			<button>Connect</button>
 		</div>
 	</div>
 	<div id="middle">
-		<div id="nav" style="float:left;border: 1px solid black; width: 20%;">
+		<div id="nav" style="float:left;border: 1px solid black; width: 20%; height:100%;">
 			<ul>
 				<li>Token Info</li>
 				<li>User Info</li>
@@ -51,21 +54,45 @@
 				<li>Create a Web-site</li>
 			</ul>
 		</div>
-		<div id="tokenlock" style="border: 1px solid black; width:30%;float:left; ">
+		<br>
+		<br>
+		<div id="tokenlock" style="border: 1px solid black; width:30%;float:left;margin-left: 2%; ">
 			<h1>Token Lock</h1>
 			<p>Safely keep your tokens locked for<br> 
 			   a time period of your own choosing.<br>
 			   Prevents you from making bad<br>
 			   decisions and selling too early.</p>
 		</div>
-		<div id="TokenLocklabel" style="height: 30%; width: 40%; border: 1px solid gray; padding: 1em;margin-left: 51%;">
+		<div id="TokenLocklabel" style="height: auto; width: 40%; border: 1px solid gray; padding: 1em;margin-left: 53%; text-align: center;">
 			<hr>
+			<input id="adressToken" value="adress token to lock" style="width: 100%; height: 10%; border: 1px solid black;">
+			<br>
+			<br>
+			<input id="adressToken" value="amount token to lock" style="width: 100%; height: 10%; border: 1px solid black;">
+			<br>
+			<br>
+			<input id="Day" value="Day" style="float:left;"><input id="month" value="Month" style="float:left;"><input id="hours" value="hours" style="float:left;">   
+			<br>
+			<br>
+			<button style="width: 80%">Approve</button>
 			<hr>
 		</div>
 	</div>
 	<div id="pre-footer">
+	 <div id="preftext" style="float:left; border:1px solid black">
+	 <h1>Services that we<br>
+     continue to improve</h1>
+	 </div>
+	 <div id="preflabel" style="border: 1px solid black;float:left;width: 50%; margin-left: 5%;">
+	 <h3>Security Guaranteed<br>
+	 Security is guaranteed. We always maintain privacy and maintaining the quality of our products.</h3>
+	 </div>
 	</div>
 	<div id="footer">
+		<div id="Fcontent">
+		<hr>
+		Copyright © 2022 TKRev, Inc. <span style="margin-left: 75%;">All rights reserved</span>
+		</div>
 	</div>
 	</body>
 </html>
