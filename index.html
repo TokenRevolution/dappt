@@ -27,6 +27,9 @@
 		ul{
 		list-style: none;
 		}
+		a {
+		text-decoration: none;
+		}
 		<!-- Div interni -->
 
 		</style>
@@ -36,22 +39,30 @@
 		<div id="logo" style="float:left;">
 			<img id="Ilogo" src="https://www.tkrev.com/wp-content/uploads/2021/04/cropped-logo-1.png"/>
 		</div>
-		<div id="Connect" style="float:left; margin-left: 50%;">
+		<div id="Connect" class="enableEthereumButton" style="float:left; margin-left: 50%;">
 			<button>Connect</button>
+			<script>
+			const ethereumButton = document.querySelector('.enableEthereumButton');
+
+			ethereumButton.addEventListener('click', () => {
+			  //Will Start the metamask extension
+			  ethereum.request({ method: 'eth_requestAccounts' });
+			});
+			</script>
 		</div>
 	</div>
 	<div id="middle">
-		<div id="nav" style="float:left;border: 1px solid black; width: 20%; height:100%;">
+		<div id="nav" style="float:left; width: 20%; height:100%;">
 			<ul>
-				<li>Token Info</li>
-				<li>User Info</li>
-				<li>Token Operation</li>
-				<li>Token Lock</li>
-				<li>Liquidity Lock</li>
-				<li>Staking</li>
-				<li>Farming</li>
-				<li>Create a Token</li>
-				<li>Create a Web-site</li>
+				<li><h4><a href="">Token Info</a></h4></li>
+				<li><h4><a href="">User Info</a></h4></li>
+				<li><h4><a href="">Token Operation</a></h4></li>
+				<li><h4><a href="">Token Lock</a></h4></li>
+				<li><h4><a href="">Liquidity Lock</a></h4></li>
+				<li><h4><a href="">Staking</a></h4></li>
+				<li><h4><a href="">Farming</a></h4></li>
+				<li><h4><a href="">Create a Token</a></h4></li>
+				<li><h4><a href="">Create a Web-site</a></h4></li>
 			</ul>
 		</div>
 		<br>
