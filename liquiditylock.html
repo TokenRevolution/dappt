@@ -1,0 +1,116 @@
+<html><head>
+		<title>TKREV</title>
+		<style>
+		body{
+		background-image: linear-gradient(to top right, #FFFFFF 0%, #DF15AA 50%, #AACFEF 100%);
+		}
+		#header{
+		width: 100%;
+		height: 25%;
+		}
+		#middle{
+		width: 100%;
+		height: 60%;
+		}
+		#pre-footer{
+		width: 100%;
+		height: 35%;
+		}
+		#footer{
+		width: 100%;
+		height: 10%;
+		}
+		#Ilogo{
+		width: 20%;
+		}
+		ul{
+		list-style: none;
+		}
+		a {
+		text-decoration: none;
+		}
+		<!-- Div interni -->
+
+		</style>
+	</head>
+	<body>
+	<div id="header">
+		<div id="logo" style="float:left;">
+			<img id="Ilogo" src="https://www.tkrev.com/wp-content/uploads/2021/04/cropped-logo-1.png">
+		</div>
+		<div id="Connect" style="float:left; margin-left: 30%;">
+			<button class="enableEthereumButton">Connect</button>
+			<button class="showAccount">Account</button>
+			<script>
+			const ethereumButton = document.querySelector('.enableEthereumButton');
+			const showAccount = document.querySelector('.showAccount');
+
+			ethereumButton.addEventListener('click', () => {
+			  getAccount();
+			});
+
+			async function getAccount() {
+			  const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+			  const account = accounts[0];
+			  showAccount.innerHTML = account;
+			}
+			</script>
+		</div>
+	</div>
+	<div id="middle">
+		<div id="nav" style="float:left; width: 20%; height:100%;">
+			<ul>
+				<li><h4><a href="">Token Info</a></h4></li>
+				<li><h4><a href="">User Info</a></h4></li>
+				<li><h4><a href="">Token Operation</a></h4></li>
+				<li><h4><a href="">Token Lock</a></h4></li>
+				<li><h4><a href="">Liquidity Lock</a></h4></li>
+				<li><h4><a href="">Staking</a></h4></li>
+				<li><h4><a href="">Farming</a></h4></li>
+				<li><h4><a href="">Create a Token</a></h4></li>
+				<li><h4><a href="">Create a Web-site</a></h4></li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<div id="tokenlock" style="width:30%;float:left;margin-left: 2%; ">
+			<h1>Liquidity Lock</h1>
+			<p>Safely keep your tokens locked for<br> 
+			   a time period of your own choosing.<br>
+			   Prevents you from making bad<br>
+			   decisions and selling too early.</p>
+		</div>
+		<div id="TokenLocklabel" style="height: auto; width: 40%; border: 1px solid gray; padding: 1em;margin-left: 53%; text-align: center;">
+			<hr>
+			<input id="adressToken" value="adress token to lock" style="width: 100%; height: 10%; border: 1px solid black;">
+			<br>
+			<br>
+			<input id="adressToken" value="amount token to lock" style="width: 100%; height: 10%; border: 1px solid black;">
+			<br>
+			<br>
+			<input id="Day" value="Day" style="float:left;"><input id="month" value="Month" style="float:left;">input id="Year" value="Year" style="float:left;"&gt;<input id="hours" value="hours" style="float:left;">   
+			<br>
+			<br>
+			<button style="width: 80%">Approve</button>
+			<hr>
+		</div>
+	</div>
+	<div id="pre-footer">
+	 <div id="preftext" style="float:left; border:1px solid black">
+	 <h1>Services that we<br>
+     continue to improve</h1>
+	 </div>
+	 <div id="preflabel" style="border: 1px solid black;float:left;width: 50%; margin-left: 5%;">
+	 <h3>Security Guaranteed<br>
+	 Security is guaranteed. We always maintain privacy and maintaining the quality of our products.</h3>
+	 </div>
+	</div>
+	<div id="footer">
+		<div id="Fcontent">
+		<hr>
+		Copyright © 2022 TKRev, Inc. <span style="margin-left: 75%;">All rights reserved</span>
+		</div>
+	</div>
+	
+
+</body></html>
